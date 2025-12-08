@@ -1,154 +1,103 @@
 
-# 🚀 **60-Day Master ML/DL Roadmap**  
-**Deep Learning • Unsupervised • ANN • CNN • NLP • Time Series • FastAPI Deployment**  
-**Prepared by Maroof**  
+# 60-Day ML/DL Roadmap (Streamlit Deployment)
+
+**Deep Learning • Unsupervised • ANN • CNN • NLP • Time Series • Streamlit Deployment**
 
 ---
 
-## 📁 **Folder Structure**
+## Month 1 — Deep Learning Foundations
 
-```
-Full_ML_Roadmap/
-│
-├── 01_Unsupervised_Learning/
-├── 02_ANN/
-├── 03_CNN/
-├── 04_NLP/
-├── 05_TimeSeries/
-├── datasets/
-├── notebooks/
-├── README.md
-└── Roadmap.md
-```
+### Week 1 — Unsupervised Learning
 
----
+* **Datasets:**
 
-# 🗓️ **MONTH 1 — Deep Learning Foundations**
+  * [Mall Customers](https://raw.githubusercontent.com/marcopeix/cluster-analysis/master/Mall_Customers.csv)
+  * [Credit Card Customers](https://raw.githubusercontent.com/plotly/datasets/master/cc_data.csv)
+* Topics: K-Means, PCA, DBSCAN, Anomaly Detection
+* Mini Project: Customer Segmentation & Visualization
 
-### **WEEK 1 — Unsupervised Learning**
-- **Day 1:** Load Mall Customers dataset, EDA, feature selection, K-Means clustering  
-- **Day 2:** Hierarchical clustering, dendrogram, Silhouette Score  
-- **Day 3:** DBSCAN, noise detection  
-- **Day 4:** Anomaly detection (Isolation Forest)  
-- **Day 5:** Mini Project: Customer Segmentation  
-- **Day 6:** Visualize clusters, interpret segments  
-- **Day 7:** Revision + notes + 10 MCQs  
+### Week 2 — ANN
 
-### **WEEK 2 — ANN**
-- **Day 8:** Neuron, forward pass, activation functions  
-- **Day 9:** Loss functions + backprop intuition  
-- **Day 10:** Build ANN from scratch (NumPy)  
-- **Day 11:** ANN with TensorFlow (Fashion MNIST)  
-- **Day 12:** Overfitting, dropout, regularization  
-- **Day 13:** Hyperparameter tuning  
-- **Day 14:** Mini Project: Digit Classifier  
+* **Datasets:**
 
-### **WEEK 3 — CNN**
-- **Day 15:** Convolution, stride, padding  
-- **Day 16:** Pooling, filters, feature extraction  
-- **Day 17:** CNN on CIFAR-10  
-- **Day 18:** Data augmentation  
-- **Day 19:** Transfer Learning (MobileNet/ResNet)  
-- **Day 20:** CNN Project: Clothes classifier / Defect detector  
-- **Day 21:** GradCAM visualization (optional)  
+  * [MNIST](https://www.tensorflow.org/datasets/community_catalog/huggingface/mnist) *(use `mnist.load_data()` in code)*
+  * [Fashion MNIST](https://www.tensorflow.org/datasets/community_catalog/huggingface/fashion_mnist) *(use `fashion_mnist.load_data()`)*
+  * [Churn Modelling](https://raw.githubusercontent.com/sharmaroshan/Customer-Churn-Prediction/master/Churn_Modelling.csv)
+* Topics: Dense Networks, Activation Functions, Backprop, Dropout
+* Mini Project: Digit Classifier, Customer Churn Prediction
 
-### **WEEK 4 — Advanced CV**
-- **Day 22:** Object detection intro (YOLO concepts)  
-- **Day 23:** Image segmentation basics  
-- **Day 24:** OpenCV preprocessing (edges, thresholds)  
-- **Day 25:** YOLOv8 tiny inference on custom images  
-- **Day 26–28:** Mini Project: Road lane / Helmet / Garbage classifier  
+### Week 3 — CNN
+
+* **Datasets:**
+
+  * [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+  * [Cats vs Dogs](https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip)
+* Topics: Convolution, Pooling, Feature Extraction, Transfer Learning
+* Mini Project: Image Classification
+
+### Week 4 — Advanced CV
+
+* **Datasets:**
+
+  * [YOLO COCO Subset](https://github.com/ultralytics/yolov5)
+  * Road lane / Garbage images (custom small datasets)
+* Topics: Object Detection, Image Segmentation, OpenCV Preprocessing
+* Mini Project: Helmet Detection, Road Lane Detection, Garbage Classification
 
 ---
 
-# 🗓️ **MONTH 2 — NLP + Time Series + Deployment**
+## Month 2 — NLP + Time Series + Streamlit Deployment
 
-### **WEEK 5 — NLP Foundations**
-- **Day 29:** Tokenization, stopwords  
-- **Day 30:** Stemming vs Lemmatization  
-- **Day 31:** Bag of Words + TF-IDF  
-- **Day 32:** ML models for NLP (NB, SVM)  
-- **Day 33:** Build Spam/Ham classifier  
-- **Day 34:** Build Sentiment classifier  
-- **Day 35:** Project polish + GitHub upload  
+### Week 5 — NLP Foundations
 
-### **WEEK 6 — Advanced NLP**
-- **Day 36:** Word embeddings (Word2Vec, GloVe)  
-- **Day 37:** RNN/LSTM/GRU intuition  
-- **Day 38:** LSTM text classification  
-- **Day 39:** Transformer intro  
-- **Day 40:** Fine-tune BERT for sentiment  
-- **Day 41:** Text classification advanced  
-- **Day 42:** NLP Mini Project: Hate speech / Review classifier  
+* **Datasets:**
 
-### **WEEK 7 — Time Series**
-- **Day 43:** Trend, seasonality, stationarity  
-- **Day 44:** ACF, PACF  
-- **Day 45:** ARIMA  
-- **Day 46:** SARIMA  
-- **Day 47:** Prophet model  
-- **Day 48–49:** Time Series Project: Sales / Temperature forecasting  
+  * [IMDB Reviews](https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz)
+  * [SMS Spam](https://raw.githubusercontent.com/laugustyniak/bert-sentiment-analysis/master/data/Tweets.csv)
+* Topics: Tokenization, Stopwords, Bag-of-Words, TF-IDF, ML models for NLP
+* Mini Project: Spam/Ham Classifier, Sentiment Analysis
 
-Perfect, Maroof bhai! 😎
-Agar tum **FastAPI skip karke sirf Streamlit** se continue karna chahte ho, to roadmap ko thoda tweak kar dete hain:
+### Week 6 — Advanced NLP
 
-### **Week 8 — Streamlit Deployment**
+* **Datasets:**
 
-* **Day 50:** ML pipeline structuring (Preprocessing + Model)
-* **Day 51:** Create first Streamlit app (input widgets, prediction button)
-* **Day 52:** Connect trained ANN/CNN/NLP model to Streamlit
-* **Day 53:** Display prediction results + probability
-* **Day 54:** Visualize clustering/CNN results in Streamlit (scatter, images)
-* **Day 55:** Add caching + efficient model load (`@st.cache_data` / `@st.cache_resource`)
-* **Day 56:** Style app (layout, sidebar, titles, charts)
-* **Day 57:** Add plots for model explainability (SHAP / feature importance)
-* **Day 58:** Test on multiple sample inputs
-* **Day 59:** Polish app for GitHub upload
-* **Day 60:** Final portfolio-ready Streamlit project + LinkedIn showcase
+  * [Hate Speech Dataset](https://github.com/t-davidson/hate-speech-and-offensive-language)
+  * [News Category Dataset](https://www.kaggle.com/rmisra/news-category-dataset)
+* Topics: Word Embeddings (Word2Vec, GloVe), RNN/LSTM, Transformers, BERT Fine-Tuning
+* Mini Project: Hate Speech / Review Classification
 
+### Week 7 — Time Series
 
+* **Datasets:**
 
-# 💾 **Datasets (All Real + Public)**
+  * [Airline Passengers](https://raw.githubusercontent.com/jbrownlee/Datasets/master/airline-passengers.csv)
+  * [Daily Min Temperature](https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv)
+* Topics: Trend, Seasonality, Stationarity, ARIMA, SARIMA, Prophet
+* Mini Project: Sales Forecasting, Temperature Prediction
 
-| Week | Task | Dataset |
-|------|------|--------|
-| 1 | K-Means, PCA | Mall Customers, Credit Card Customers |
-| 2 | ANN | MNIST, Fashion MNIST, Churn Modelling |
-| 3 | CNN | CIFAR-10, Cats vs Dogs, Plant Disease |
-| 4 | Advanced CV | YOLO COCO subset, Road Lane, Garbage classifier |
-| 5 | NLP | IMDB Reviews, SMS Spam, Twitter Sentiment |
-| 6 | Advanced NLP | Hate Speech, News Category, Sarcasm Detection |
-| 7 | Time Series | Airline Passengers, Daily Min Temp, Store Sales |
-| 8 | Streamlit | Churn, Student Performance, Salary Prediction |
+### Week 8 — Streamlit Deployment
+
+* **Datasets:** All previous datasets can be used
+* Topics: Build interactive dashboards with Streamlit
+* Day-wise Focus:
+
+  1. ML pipeline structuring
+  2. Streamlit app with input widgets and prediction button
+  3. Connect ANN/CNN/NLP/Time Series models
+  4. Visualize clustering/CNN/NLP results
+  5. Add caching and efficient model load (`@st.cache_data`)
+  6. Style app (sidebar, charts, titles)
+  7. Test multiple inputs
+  8. Polish app for GitHub portfolio
 
 ---
 
-# 📌 **Code Templates / Quick Snippets**
-- K-Means → sklearn.cluster.KMeans  
-- PCA → sklearn.decomposition.PCA  
-- ANN → TensorFlow/Keras Sequential  
-- CNN → Conv2D + MaxPooling2D + Dense  
-- NLP → TfidfVectorizer + LinearSVC, LSTM, BERT  
-- Time Series → ARIMA, SARIMA, Prophet  
-- Streamlit → Deploy ML Projects  
+## ✅ Summary
+
+* 10+ ML/DL Projects
+* Full portfolio-ready GitHub
+* Streamlit deployed apps
+* Real datasets experience
+* Job-ready for ML engineer / data scientist
 
 ---
-
-# ⭐ **Tips**
-- EDA first → features strong + scaling  
-- Clustering → KMeans + Elbow + Silhouette  
-- ANN/CNN → small datasets first → transfer learning  
-- NLP → classical → embeddings → Transformers  
-- Time Series → start with ARIMA → Prophet for forecasting  
-- Deployment → start small → scale with Streamlit  
-
----
-
-# 🎯 **Outcome After 60 Days**
-- 10+ ML/DL Projects  
-- Portfolio-ready GitHub  
-- Streamlit deployed models  
-- Real datasets experience  
-- Job-ready for ML engineer / data scientist  
-
-
